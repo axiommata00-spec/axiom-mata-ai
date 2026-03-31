@@ -99,17 +99,20 @@
   /* AI Illustration Placeholder */
   .hero-image {
     margin-top:40px;
-    width:200px;
-    height:200px;
-    background: rgba(255,255,255,0.1);
+    width:250px;
+    height:250px;
     border-radius:50%;
+    overflow:hidden;
     display:flex;
     align-items:center;
     justify-content:center;
-    font-size:0.9em;
-    color:#ccc;
-  }
-
+    box-shadow: 0 12px 30px rgba(79,124,255,0.4);
+}
+.hero-image img {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
   /* Footer */
   footer {
     text-align:center;
@@ -135,7 +138,7 @@
     <input type="email" placeholder="Enter your email for early access" />
     <button class="btn">Join Early Access</button>
   </div>
-  <div class="hero-image">AI Illustration</div>
+ <img src="https://i.imgur.com/Np0vT4U.png" alt="AI Illustration" class="hero-image">
 </header>
 
 <section class="features">
