@@ -1,18 +1,58 @@
-axiom-mata-ai/
-├── public/
-│   └── vite.svg                 # Static assets
-├── src/
-│   ├── components/              # Reusable UI components and views
-│   │   ├── AppUI.tsx            # Main application dashboard, chat, and memory UI
-│   │   ├── BrandShowcase.tsx    # Brand guidelines, typography, and color palette
-│   │   └── Logo.tsx             # SVG Logo components (Wordmark, Icon, variations)
-│   ├── App.tsx                  # Root component (Landing page & routing logic)
-│   ├── index.css                # Global styles and Tailwind CSS configuration
-│   ├── main.tsx                 # React application entry point
-│   ├── types.ts                 # TypeScript interfaces (Message, MemoryEntry, Decision)
-│   └── vite-env.d.ts            # Vite environment types
-├── .env.example                 # Environment variables template
-├── index.html                   # Main HTML template
-├── package.json                 # Project dependencies and scripts
-├── tsconfig.json                # TypeScript configuration
-└── vite.config.ts               # Vite bundler configuration
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Axiom Mata AI</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0B0B0F;
+      color: #FFFFFF;
+      text-align: center;
+      padding: 40px;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    p {
+      color: #ccc;
+      font-size: 1.2em;
+      max-width: 500px;
+      margin: 0 auto 20px;
+    }
+    .btn {
+      background: #4F7CFF;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: #375fd1;
+    }
+    input {
+      padding: 10px;
+      width: 250px;
+      margin-top: 15px;
+      border-radius: 6px;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Axiom Mata AI</h1>
+  <p>Your personal intelligence system that remembers who you are and helps you make better decisions over time.</p>
+
+  <h3>Join Early Access</h3>
+  <input type="email" placeholder="Enter your email" />
+  <br/><br/>
+  <button class="btn">Join Now</button>
+
+</body>
+</html>
